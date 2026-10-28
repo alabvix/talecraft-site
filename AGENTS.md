@@ -13,6 +13,9 @@ convenções e armadilhas para quem continuar o trabalho.
   a árvore familiar). A galeria usa 13 telas; as três prévias de tema ficam em
   `#temas`.
 - Publicação via `.github/workflows/pages.yml` (GitHub Actions → Pages).
+- **Newsletter oficial:** <https://talecraftapp.substack.com/> — é o CTA principal
+  (topo, hero, download e rodapé). O site **não** divulga o repositório de
+  código-fonte nem links de releases.
 - Sem `gh` CLI nesta máquina: criar o repositório remoto é tarefa do usuário.
 
 ## Como validar
@@ -46,6 +49,9 @@ convenções e armadilhas para quem continuar o trabalho.
   antes do requisito.
 - O tema da landing é próprio. Não adicione seletor de tema nem copie o seletor do
   aplicativo.
+- **Sem links para o código-fonte:** não adicione GitHub, releases ou issues do
+  aplicativo à página. O caminho para acompanhar o projeto é a newsletter
+  (<https://talecraftapp.substack.com/>).
 - **Caminhos absolutos**: só a `404.html` usa `/talecraft-site/...` (para funcionar em
   URLs profundas do Pages) e o `index.html` aponta `canonical`/`og:*` para esse
   domínio. Se o repositório ou o domínio mudar, atualize os dois arquivos.
@@ -55,7 +61,7 @@ convenções e armadilhas para quem continuar o trabalho.
 
 ## Regenerar as capturas
 
-No repositório `talecraft-app` (irmão deste):
+No diretório do aplicativo (irmão deste):
 
 ```powershell
 node scripts/capturar-telas.mjs

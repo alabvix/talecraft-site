@@ -1,6 +1,6 @@
 # TaleCraft — site
 
-Landing page estática do [TaleCraft](https://github.com/alabvix/talecraft-app), o
+Landing page estática do TaleCraft, o
 aplicativo desktop de planejamento de livros de ficção científica, fantasia e terror.
 
 O site não usa bibliotecas, framework nem build. É HTML, um CSS e um JavaScript
@@ -37,11 +37,17 @@ npx serve .
 
 Depois abra <http://localhost:8080/>.
 
+## Newsletter
+
+A página divulga a newsletter oficial do aplicativo em
+<https://talecraftapp.substack.com/>: no topo, no hero, na seção de download e no
+rodapé. O site não expõe o repositório de código-fonte.
+
 ## Telas do aplicativo
 
 As imagens em `assets/telas/` são capturas reais do aplicativo, feitas com um banco
 de demonstração isolado (nenhum dado de usuário é tocado). O script vive no
-repositório do app:
+diretório do aplicativo (irmão deste):
 
 ```powershell
 cd ../talecraft-app
@@ -76,5 +82,7 @@ Se o site mudar de endereço, ajuste esses caminhos e também as metatags `canon
   opções do aplicativo aparecem apenas como parte do conteúdo.
 - Toda imagem precisa de `width`, `height`, `alt` e `loading="lazy"` (exceto a do
   hero, que é prioritária).
-- O CTA de download aponta para o repositório de releases e leva o selo "em breve"
-  enquanto não houver build pública.
+- O CTA principal aponta para a **newsletter oficial**
+  (<https://talecraftapp.substack.com/>). A seção de download informa que as builds
+  ainda não estão disponíveis; não há links para o repositório de código nem para
+  releases nesta página.
