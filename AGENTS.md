@@ -8,8 +8,10 @@ convenções e armadilhas para quem continuar o trabalho.
 - Página única (`index.html`), `404.html`, `robots.txt`, `.nojekyll`, README.
 - Tema "Manuscrito" em `assets/css/site.css` (papel `#efe7d9`, tinta `#2b2620`,
   roxo `#6a3fbf`, cobre `#a34f2b`).
-- 16 capturas reais em `assets/telas/` (2400×1500, exceto `arvore-familiar.jpg`,
-  recortada em 691×845). Miniaturas de 1200px em `assets/telas/mini/`.
+- 17 capturas reais em `assets/telas/` (2400×1500, exceto `arvore-familiar.jpg`,
+  recortada em 691×845). Miniaturas de 1200px em `assets/telas/mini/` (todas menos
+  a árvore familiar). A galeria usa 13 telas; as três prévias de tema ficam em
+  `#temas`.
 - Publicação via `.github/workflows/pages.yml` (GitHub Actions → Pages).
 - Sem `gh` CLI nesta máquina: criar o repositório remoto é tarefa do usuário.
 
@@ -34,6 +36,14 @@ convenções e armadilhas para quem continuar o trabalho.
 - **Não há arte de mundo** no projeto: a ficha do mundo mostra o placeholder real.
 - **Duas versões de cada tela**: a galeria usa `mini/`; o lightbox usa a versão
   cheia (`data-cheia`). Ao trocar uma captura, atualize as duas.
+- **Tema da captura não é automático**: o capturador fixa `talecraft.tema` em
+  `tundra` antes da galeria (para o papel claro da landing) e gera as três
+  prévias de Meus Livros no fim. Sem fixar o tema, o localStorage do WebView2
+  vaza entre execuções e a imagem do card Blade Byte sai clara.
+- Os gráficos de **arco narrativo** e **Ação / Suspensão** ainda não existem no
+  app: em `#recursos` eles aparecem como "planejado", alinhados ao roadmap
+  ("Gráficos e exportação" em *depois*). Não publique captura nem prometa a tela
+  antes do requisito.
 - O tema da landing é próprio. Não adicione seletor de tema nem copie o seletor do
   aplicativo.
 - **Caminhos absolutos**: só a `404.html` usa `/talecraft-site/...` (para funcionar em

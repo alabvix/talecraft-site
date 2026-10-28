@@ -604,6 +604,57 @@ strong { font-weight: 600; color: var(--ink); }
   text-transform: uppercase;
 }
 
+.analise {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  gap: 24px 36px;
+  margin-top: 36px;
+  padding-top: 30px;
+  border-top: 1px dashed var(--line-forte);
+}
+.analise__intro h3 { font-size: 1.5rem; margin: 6px 0 8px; }
+.analise__intro p { font-size: 14.5px; color: var(--muted); max-width: 44ch; }
+
+.analise__cards { display: grid; gap: 14px; align-content: start; }
+.analise__card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 2px 16px;
+  align-items: start;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--tom);
+  border-radius: 4px var(--raio) var(--raio) 4px;
+  box-shadow: var(--sombra-suave);
+}
+.analise__icone {
+  grid-row: span 2;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--tom);
+  background: color-mix(in srgb, var(--tom) 11%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tom) 22%, transparent);
+}
+.analise__icone svg { width: 20px; height: 20px; }
+.analise__titulo { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.analise__titulo h4 { font-size: 1.08rem; margin: 0; }
+.analise__marca {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--copper);
+  border: 1px solid color-mix(in srgb, var(--copper) 30%, transparent);
+  background: color-mix(in srgb, var(--copper) 7%, transparent);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.analise__card p { font-size: 13.8px; color: var(--muted); margin: 5px 0 0; max-width: 62ch; }
+
 /* 10. Galeria de telas -------------------------------------------------- */
 
 .galeria {
@@ -928,6 +979,7 @@ strong { font-weight: 600; color: var(--ink); }
 @media (max-width: 1080px) {
   .hero__grade { gap: 40px; }
   .recursos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .analise { grid-template-columns: 1fr; gap: 20px; }
   .stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .roadmap { grid-template-columns: 1fr; }
 }
@@ -977,6 +1029,9 @@ strong { font-weight: 600; color: var(--ink); }
   .hero__acoes .btn { width: 100%; }
   .hero__acoes { gap: 9px; }
   .recursos { grid-template-columns: 1fr; }
+  .analise { margin-top: 28px; padding-top: 24px; }
+  .analise__card { padding: 18px; gap: 2px 12px; }
+  .analise__icone { width: 34px; height: 34px; }
   .stack { grid-template-columns: 1fr; }
   .temas .tema { grid-template-columns: 1fr; }
   .tema img { aspect-ratio: 8 / 5; border-right: 0; border-bottom: 1px solid var(--line); }
