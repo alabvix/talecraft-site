@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaleCraft — o ateliê de planejamento do seu livro</title>
+  <meta name="description" content="TaleCraft reúne personagens, mundos, facções e o plano de cada livro num só lugar. Um ateliê offline de planejamento para ficção científica, fantasia e terror.">
+  <meta name="author" content="TaleCraft">
+  <meta name="theme-color" content="#efe7d9">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="TaleCraft">
+  <meta property="og:title" content="TaleCraft — o ateliê de planejamento do seu livro">
+  <meta property="og:description" content="Personagens, mundos, facções e o plano de cada livro num só lugar. Offline, no seu computador.">
+  <meta property="og:url" content="https://alabvix.github.io/talecraft-site/">
+  <meta property="og:image" content="https://alabvix.github.io/talecraft-site/assets/telas/mini/personagens.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="750">
+  <meta property="og:image:alt" content="Tela de personagens do TaleCraft com seis fichas e retratos">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://alabvix.github.io/talecraft-site/assets/telas/mini/personagens.jpg">
+  <link rel="canonical" href="https://alabvix.github.io/talecraft-site/">
+
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/icone-256.png">
+  <link rel="stylesheet" href="assets/fontes/fontes.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar" id="topo">
+    <div class="container topbar__interior">
+      <a class="marca" href="#topo" aria-label="TaleCraft — início">
+        <span class="marca__simbolo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/>
+            <path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H19v3H6.5A2.5 2.5 0 0 1 4 20.5z"/>
+          </svg>
+        </span>
+        <span>
+          <span class="marca__nome">Tale<span>Craft</span></span>
+          <span class="marca__nota">planejamento de ficção</span>
+        </span>
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a class="menu__link" href="#recursos">Recursos</a>
+        <a class="menu__link" href="#telas">Telas</a>
+        <a class="menu__link" href="#temas">Temas</a>
+        <a class="menu__link" href="#stack">Stack</a>
+        <a class="menu__link" href="#download">Download</a>
+      </nav>
+
+      <div class="topbar__acoes">
+        <a class="btn btn--primario btn--pequeno" href="https://github.com/alabvix/talecraft-app/releases" target="_blank" rel="noopener">
+          Baixar
+          <span class="selo">em breve</span>
+        </a>
+        <button class="menu__botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero__grade">
+        <div>
+          <p class="hero__selo"><b>alpha</b> em desenvolvimento · em breve</p>
+          <h1>Escreva o livro inteiro sem perder <em>o fio</em>.</h1>
+          <p class="hero__linha">
+            TaleCraft é o ateliê de planejamento de quem escreve ficção científica,
+            fantasia e terror. Personagens, mundos, facções e o plano de cada livro
+            conversam entre si — no seu computador, sem conta e sem nuvem.
+          </p>
+          <div class="hero__acoes">
+            <a class="btn btn--primario" href="https://github.com/alabvix/talecraft-app/releases" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v11"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/>
+              </svg>
+              Baixar para Windows
+              <span class="selo">em breve</span>
+            </a>
+            <a class="btn btn--secundario" href="#telas">Ver as telas</a>
+          </div>
+          <ul class="hero__fatos">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Funciona offline
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Dados no seu computador
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Windows 10 e 11
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__midia">
+          <div class="janela janela--hero">
+            <div class="janela__barra">
+              <span class="janela__bolinhas" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="janela__titulo">TaleCraft — Personagens</span>
+            </div>
+            <div class="janela__tela">
+              <img src="assets/telas/mini/personagens.jpg" width="1200" height="750"
+                   alt="Tela de personagens do TaleCraft com seis fichas, retratos e vínculos com livros"
+                   fetchpriority="high" decoding="async">
+            </div>
+          </div>
+          <p class="hero__legenda"><span>captura real do aplicativo</span><span>1600 × 1000</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="faixa">
+      <span>Ficção científica</span><i></i>
+      <span>Fantasia</span><i></i>
+      <span>Terror</span><i></i>
+      <span>3 temas</span><i></i>
+      <span>100% local</span>
+    </div>
+
+    <section class="secao" id="sobre">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <p class="sobretitulo">O que é</p>
+          <h2 class="titulo-secao">Um ateliê de planejamento, não mais uma planilha.</h2>
+          <p class="texto-secao">
+            Cada livro puxa um fio: o personagem que sustenta a trama, o mundo que
+            explica as regras, a facção que cria o conflito. O TaleCraft guarda esses
+            fios no mesmo lugar e mostra as ligações entre eles.
+          </p>
+        </div>
+
+        <div class="duplo">
+          <div class="cartao-lista cartao-lista--sim">
+            <h3>Feito para</h3>
+            <ul>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Planejar um livro do zero, da premissa ao final.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Manter personagens, mundos e facções coerentes entre si.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Escrever sinopses e resumos sem sair da ficha do projeto.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Trabalhar offline, com os dados onde você os deixou.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                Trocar de tema conforme o gênero do projeto.
+              </li>
+            </ul>
+          </div>
+
+          <div class="cartao-lista cartao-lista--nao">
+            <h3>Não é</h3>
+            <ul>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                Um serviço na nuvem: nada sai do seu computador.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                Um gerador de histórias: as decisões continuam suas.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                Um aplicativo de celular: é feito para a mesa, com teclado e mouse.
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                Um substituto para leitura crítica e revisão profissional.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="recursos">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <p class="sobretitulo">Recursos</p>
+          <h2 class="titulo-secao">Cada parte do livro no seu lugar.</h2>
+          <p class="texto-secao">
+            Módulos que compartilham os mesmos dados. Um personagem cadastrado uma vez
+            aparece na ficha do livro, na árvore familiar e nas facções a que pertence.
+          </p>
+        </div>
+
+        <div class="recursos">
+          <article class="recurso" style="--tom: var(--accent)">
+            <span class="recurso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H19v3H6.5A2.5 2.5 0 0 1 4 20.5z"/></svg>
+            </span>
+            <h3>Meus Livros</h3>
+            <p>
+              A biblioteca do projeto. Capas geradas a partir do título, busca por nome
+              e o andamento de cada livro em etapas.
+            </p>
+            <span class="recurso__detalhe">Biblioteca · busca · etapas</span>
+          </article>
+
+          <article class="recurso" style="--tom: var(--copper)">
+            <span class="recurso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c0-3.6 3.4-6 7.5-6s7.5 2.4 7.5 6"/></svg>
+            </span>
+            <h3>Fichas de personagem</h3>
+            <p>
+              Retrato, personalidade, forças, fraquezas, interesses e biografia. Uma
+              ficha completa para cada figura do elenco.
+            </p>
+            <span class="recurso__detalhe">Retratos · personalidade · biografia</span>
+          </article>
+
+          <article class="recurso" style="--tom: var(--green)">
+            <span class="recurso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8.4 6h7.2M7.2 8.1l3.6 7.8M16.8 8.1l-3.6 7.8"/></svg>
+            </span>
+            <h3>Relações e árvore familiar</h3>
+            <p>
+              Dez tipos de vínculo — de aliança a rivalidade, de mentor a filho. A
+              árvore familiar se desenha a partir do que já foi cadastrado.
+            </p>
+            <span class="recurso__detalhe">Vínculos · genealogia · navegação</span>
+          </article>
+
+          <article class="recurso" style="--tom: var(--blue)">
+            <span class="recurso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2"/><path d="M12 3.4c2.3 2.4 3.5 5.4 3.5 8.6s-1.2 6.2-3.5 8.6c-2.3-2.4-3.5-5.4-3.5-8.6S9.7 5.8 12 3.4z"/></svg>
+            </span>
+            <h3>Worldbuilding</h3>
+            <p>
+              Localidades, povos, artefatos, armas, eventos e sistemas. Seis tipos de
+              entrada por mundo, todas pesquisáveis.
+            </p>
+            <span class="recurso__detalhe">Mundos · entradas · sistemas</span>
+          </article>
+
+          <article class="recurso" style="--tom: var(--amber)">
+            <span class="recurso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18"/><path d="M6 4h10.5l-2.2 3.6L16.5 11H6"/><circle cx="18" cy="18" r="3"/></svg>
+            </span>
+            <h3>Facções</h3>
+            <p>
+              Ideologia, objetivos, líderes e território. Associe personagens à facção
+              com o papel de cada um — líder, membro, informante.
+            </p>
+            <span class="recurso__detalhe">Organizações · líderes · membros</span>
+          </article>
+
+          <article class="recurso" style="--tom: var(--accent-claro)">
+            <span class="recurso__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.7 0 2.4-1 2.4-2.1 0-1.6-1.2-2-1.2-3.3 0-.9.7-1.5 1.7-1.5H16a5 5 0 0 0 5-5c0-3.4-4-6.1-9-6.1z"/><circle cx="7.5" cy="10.5" r="1.1"/><circle cx="11" cy="7" r="1.1"/><circle cx="15.5" cy="7.8" r="1.1"/></svg>
+            </span>
+            <h3>Três temas</h3>
+            <p>
+              Blade Byte, Old Tower e Tundra. Cada tema muda superfícies, tipografia e
+              acentos — sem tocar no conteúdo.
+            </p>
+            <span class="recurso__detalhe">Blade Byte · Old Tower · Tundra</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="relacoes">
+      <div class="container relacoes">
+        <div>
+          <p class="sobretitulo">Relações</p>
+          <h2 class="titulo-secao">Nenhum personagem existe sozinho.</h2>
+          <p class="texto-secao">
+            Cadastre o vínculo entre duas pessoas e o TaleCraft mantém os dois lados
+            coerentes: quem é filho também aparece como pai ou mãe, e a árvore familiar
+            se organiza sozinha.
+          </p>
+          <ul class="lista-cheia">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Relações simétricas espelhadas automaticamente.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Árvore com gerações, uniões e parentes desconhecidos.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Navegação entre fichas sem perder o contexto.
+            </li>
+          </ul>
+        </div>
+
+        <figure class="relacoes__midia">
+          <div class="janela janela--retrato">
+            <div class="janela__barra">
+              <span class="janela__bolinhas" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="janela__titulo">TaleCraft — Família</span>
+            </div>
+            <div class="janela__tela">
+              <img src="assets/telas/arvore-familiar.jpg" width="691" height="845"
+                   alt="Árvore familiar de Iara Vasquez no TaleCraft, com mãe, filha, irmã e mentor" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <figcaption>
+            A árvore de Iara Vasquez é montada a partir das relações cadastradas nas
+            fichas — nenhum dado é digitado duas vezes.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="telas">
+      <div class="container">
+        <div class="cabecalho-secao cabecalho-secao--linha">
+          <div>
+            <p class="sobretitulo">Telas</p>
+            <h2 class="titulo-secao">O aplicativo, tela por tela.</h2>
+            <p class="texto-secao">
+              Capturas reais do TaleCraft, feitas com um projeto de demonstração.
+              Clique em qualquer tela para ampliar.
+            </p>
+          </div>
+          <a class="btn btn--secundario btn--pequeno" href="https://github.com/alabvix/talecraft-app" target="_blank" rel="noopener">Ver o projeto no GitHub</a>
+        </div>
+
+        <div class="galeria">
+          <figure class="tela tela--larga">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/meus-livros.jpg"
+                    data-titulo="Meus Livros"
+                    data-legenda="A biblioteca do projeto: capas geradas, busca por título e o andamento de cada livro.">
+              <img src="assets/telas/mini/meus-livros.jpg" width="1200" height="750"
+                   alt="Tela Meus Livros com dois livros de demonstração e o botão de criar livro" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg>
+              </span>
+            </button>
+            <figcaption>
+              <b>Meus Livros</b>
+              A biblioteca do projeto: capas geradas, busca por título e o andamento de cada livro.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/painel-do-livro.jpg"
+                    data-titulo="Painel do Livro"
+                    data-legenda="O painel reúne as etapas do projeto, os dados principais e os atalhos para cada seção do livro.">
+              <img src="assets/telas/mini/painel-do-livro.jpg" width="1200" height="750"
+                   alt="Painel do livro A Órbita Silenciosa, com etapas e seções" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Painel do Livro</b>
+              O estado do projeto, as etapas e os atalhos para cada seção.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/dados-gerais.jpg"
+                    data-titulo="Dados do Livro"
+                    data-legenda="Gênero, subgêneros, público, idioma e período da história — a base que alimenta as outras abas.">
+              <img src="assets/telas/mini/dados-gerais.jpg" width="1200" height="750"
+                   alt="Formulário de dados gerais do livro, com gênero, público e período" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Dados do Livro</b>
+              Gênero, público, idioma e período: a base de todas as outras abas.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/resumo.jpg"
+                    data-titulo="Resumo"
+                    data-legenda="O resumo longo do livro e o final planejado, no mesmo lugar em que a sinopse é escrita.">
+              <img src="assets/telas/mini/resumo.jpg" width="1200" height="750"
+                   alt="Aba Resumo com o texto longo do livro e o final planejado" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Resumo</b>
+              O arco completo e o final planejado, sem perder a visão do todo.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/sinopse.jpg"
+                    data-titulo="Sinopse"
+                    data-legenda="Duas versões da sinopse — comercial e editorial — com tema central, subtemas e conflito principal.">
+              <img src="assets/telas/mini/sinopse.jpg" width="1200" height="750"
+                   alt="Aba Sinopse com as versões comercial e editorial do livro" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Sinopse</b>
+              Versão comercial e editorial, tema central e conflito principal.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/voz-narrativa.jpg"
+                    data-titulo="Voz Narrativa"
+                    data-legenda="Narrador, tom, tempo, humor, estilo e ritmo: as escolhas que definem como a história soa.">
+              <img src="assets/telas/mini/voz-narrativa.jpg" width="1200" height="750"
+                   alt="Aba Voz Narrativa com narrador, tom, tempo, humor, estilo e ritmo" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Voz Narrativa</b>
+              Narrador, tom, tempo, humor, estilo e ritmo do livro.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/personagens.jpg"
+                    data-titulo="Personagens"
+                    data-legenda="Todas as fichas do projeto em cartões, com retrato, alcunha e os vínculos com livros.">
+              <img src="assets/telas/mini/personagens.jpg" width="1200" height="750"
+                   alt="Galeria de personagens com seis cartões e retratos" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Personagens</b>
+              O elenco em cartões, com retrato, alcunha e vínculos.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/personagem.jpg"
+                    data-titulo="Ficha de personagem"
+                    data-legenda="A ficha de Iara Vasquez: retrato, idade, personalidade, forças, fraquezas e biografia.">
+              <img src="assets/telas/mini/personagem.jpg" width="1200" height="750"
+                   alt="Ficha de Iara Vasquez com retrato e dados de personalidade" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Ficha de personagem</b>
+              Retrato, personalidade, forças, fraquezas e biografia.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/mundos.jpg"
+                    data-titulo="Worldbuilding"
+                    data-legenda="Os mundos do projeto, cada um com tipo, nível tecnológico e gêneros literários.">
+              <img src="assets/telas/mini/mundos.jpg" width="1200" height="750"
+                   alt="Lista de mundos com Kepler, Ravória e Arda" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Worldbuilding</b>
+              Os mundos do projeto, com tipo, tecnologia e gêneros.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/mundo-kepler.jpg"
+                    data-titulo="Mundo: Kepler"
+                    data-legenda="A ficha do mundo Kepler, com descrição e as abas de dados compartilhados, imagem e entradas.">
+              <img src="assets/telas/mini/mundo-kepler.jpg" width="1200" height="750"
+                   alt="Ficha do mundo Kepler com descrição e abas de dados" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Mundo: Kepler</b>
+              Descrição, dados compartilhados e entradas do mundo.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/entradas-kepler.jpg"
+                    data-titulo="Entradas do mundo"
+                    data-legenda="Localidades de Kepler em tabela paginada, com busca e o resumo de cada entrada.">
+              <img src="assets/telas/mini/entradas-kepler.jpg" width="1200" height="750"
+                   alt="Tabela de localidades do mundo Kepler, com paginação" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Entradas do mundo</b>
+              Localidades, povos, artefatos, armas, eventos e sistemas.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/faccoes.jpg"
+                    data-titulo="Facções"
+                    data-legenda="As facções de Kepler, com líderes, base e o número de membros associados.">
+              <img src="assets/telas/mini/faccoes.jpg" width="1200" height="750"
+                   alt="Tabela de facções do mundo Kepler com líderes e membros" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Facções</b>
+              Ideologia, líderes, território e membros com papel.
+            </figcaption>
+          </figure>
+
+          <figure class="tela">
+            <button class="tela__quadro" type="button"
+                    data-cheia="assets/telas/temas.jpg"
+                    data-titulo="Temas"
+                    data-legenda="As três opções de tema do aplicativo, com prévia de cores e das fontes de cada uma.">
+              <img src="assets/telas/mini/temas.jpg" width="1200" height="750"
+                   alt="Tela de temas com Blade Byte, Old Tower e Tundra" loading="lazy" decoding="async">
+              <span class="tela__zoom" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+            </button>
+            <figcaption>
+              <b>Temas</b>
+              Blade Byte, Old Tower e Tundra, com prévia de cores e fontes.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="temas">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <p class="sobretitulo">Temas do aplicativo</p>
+          <h2 class="titulo-secao">Três climas para o mesmo projeto.</h2>
+          <p class="texto-secao">
+            O tema muda a atmosfera do app, não o conteúdo. A escolha fica salva no
+            computador e vale para a próxima vez que você abrir o TaleCraft.
+          </p>
+        </div>
+
+        <div class="temas">
+          <article class="tema">
+            <img src="assets/telas/mini/meus-livros.jpg" width="1200" height="750"
+                 alt="Meus Livros no tema Blade Byte, escuro e técnico" loading="lazy" decoding="async">
+            <div class="tema__corpo">
+              <h3>Blade Byte</h3>
+              <p>Escuro e técnico, com acentos neon por módulo. O padrão do aplicativo.</p>
+              <div class="tema__paleta" aria-label="Cores do tema Blade Byte">
+                <i style="background:#0f1218"></i>
+                <i style="background:#0a0c10"></i>
+                <i style="background:#7c5cff"></i>
+                <i style="background:#f2a13b"></i>
+                <small>padrão</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="tema">
+            <img src="assets/telas/mini/meus-livros-old-tower.jpg" width="1200" height="750"
+                 alt="Meus Livros no tema Old Tower, em pergaminho e tinta sépia" loading="lazy" decoding="async">
+            <div class="tema__corpo">
+              <h3>Old Tower</h3>
+              <p>Pergaminho claro, tinta sépia e acentos de telha e oliva. Para fantasia.</p>
+              <div class="tema__paleta" aria-label="Cores do tema Old Tower">
+                <i style="background:#f4ead4"></i>
+                <i style="background:#e3d5b8"></i>
+                <i style="background:#b3532c"></i>
+                <i style="background:#7d8a4f"></i>
+                <small>medieval</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="tema">
+            <img src="assets/telas/mini/meus-livros-tundra.jpg" width="1200" height="750"
+                 alt="Meus Livros no tema Tundra, em cinza-gelo e verde profundo" loading="lazy" decoding="async">
+            <div class="tema__corpo">
+              <h3>Tundra</h3>
+              <p>Claro e frio, com painéis de vinho suave e botões em verde profundo.</p>
+              <div class="tema__paleta" aria-label="Cores do tema Tundra">
+                <i style="background:#eef3f7"></i>
+                <i style="background:#d8e2ea"></i>
+                <i style="background:#2f7d5c"></i>
+                <i style="background:#4f8fb5"></i>
+                <small>claro</small>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="temas__nota">
+          Esta página tem tema próprio, inspirado em papel e tinta — não é uma das
+          opções do aplicativo.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" id="stack">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <p class="sobretitulo">Stack</p>
+          <h2 class="titulo-secao">Pequeno, local e sem servidor.</h2>
+          <p class="texto-secao">
+            O TaleCraft é um aplicativo desktop: a interface roda no WebView do próprio
+            Windows e os dados ficam num banco SQLite no seu computador.
+          </p>
+        </div>
+
+        <div class="stack">
+          <div class="stack__item">
+            <b>Interface</b>
+            <span>React 19 e Vite, sem framework de UI.</span>
+          </div>
+          <div class="stack__item">
+            <b>Desktop</b>
+            <span>Tauri 2 com o núcleo em Rust.</span>
+          </div>
+          <div class="stack__item">
+            <b>Dados</b>
+            <span>SQLite local, com migrações versionadas.</span>
+          </div>
+          <div class="stack__item">
+            <b>WebView</b>
+            <span>WebView2, já presente no Windows 10 e 11.</span>
+          </div>
+          <div class="stack__item">
+            <b>Offline</b>
+            <span>Sem conta, sem telemetria, sem nuvem.</span>
+          </div>
+        </div>
+
+        <p class="stack__nota">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+          O banco de dados pode ser apontado para outra pasta pela variável
+          <code>TALECRAFT_DADOS</code> — útil para backups e para manter projetos separados.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao" id="roadmap">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <p class="sobretitulo">Roadmap</p>
+          <h2 class="titulo-secao">O que já está de pé — e o que vem depois.</h2>
+        </div>
+
+        <div class="roadmap">
+          <div class="entrega">
+            <p class="sobretitulo" style="color:#cbbfa9">Entrega atual</p>
+            <span class="entrega__numero">01</span>
+            <h3 style="color:#f8f3e9; font-size:1.5rem">Alpha</h3>
+            <p>
+              A base do aplicativo está funcionando: biblioteca, fichas de personagem,
+              relações, mundos, facções e temas. O próximo passo é fechar os vínculos
+              entre o livro e o restante do projeto.
+            </p>
+            <ul>
+              <li>Meus Livros</li>
+              <li>Personagens</li>
+              <li>Relações</li>
+              <li>Worldbuilding</li>
+              <li>Facções</li>
+              <li>Temas</li>
+            </ul>
+          </div>
+
+          <div class="proximos">
+            <article class="proximo">
+              <span class="proximo__marca">próximo</span>
+              <div>
+                <h3>Instalador assinado</h3>
+                <p>Builds públicas para Windows, com assinatura de código e atualização.</p>
+              </div>
+            </article>
+            <article class="proximo">
+              <span class="proximo__marca">próximo</span>
+              <div>
+                <h3>Capítulos e vínculos</h3>
+                <p>Ligar personagens, mundos e facções a cada livro, com progresso real por projeto.</p>
+              </div>
+            </article>
+            <article class="proximo">
+              <span class="proximo__marca">depois</span>
+              <div>
+                <h3>Gráficos e exportação</h3>
+                <p>Análise do projeto e exportação dos dados do livro em formatos abertos.</p>
+              </div>
+            </article>
+            <article class="proximo">
+              <span class="proximo__marca">depois</span>
+              <div>
+                <h3>Documentação de uso</h3>
+                <p>Guia das telas, do fluxo de planejamento e do formato de dados.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--apertada" id="download">
+      <div class="container">
+        <div class="download">
+          <div>
+            <p class="sobretitulo" style="color:#b9a6e6">Download</p>
+            <h2>Leve o TaleCraft para a sua mesa.</h2>
+            <p>
+              As builds públicas ainda não estão disponíveis. O repositório de releases
+              já está aberto — quando o instalador sair, ele aparece por lá.
+            </p>
+          </div>
+          <div class="download__acoes">
+            <a class="btn btn--primario" href="https://github.com/alabvix/talecraft-app/releases" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v11"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/>
+              </svg>
+              Baixar para Windows
+              <span class="selo">em breve</span>
+            </a>
+            <a class="btn btn--claro" href="https://github.com/alabvix/talecraft-app" target="_blank" rel="noopener">Ver o código no GitHub</a>
+            <span class="download__nota">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2"/></svg>
+              Windows 10 e 11 · x64
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__grade">
+        <div class="rodape__sobre">
+          <a class="marca" href="#topo" aria-label="TaleCraft — início">
+            <span class="marca__simbolo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/>
+                <path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H19v3H6.5A2.5 2.5 0 0 1 4 20.5z"/>
+              </svg>
+            </span>
+            <span>
+              <span class="marca__nome">Tale<span>Craft</span></span>
+              <span class="marca__nota">planejamento de ficção</span>
+            </span>
+          </a>
+          <p>
+            Um ateliê de planejamento para quem escreve ficção científica, fantasia e
+            terror. Feito para rodar no seu computador.
+          </p>
+        </div>
+
+        <div>
+          <h3>Site</h3>
+          <ul>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#telas">Telas do aplicativo</a></li>
+            <li><a href="#temas">Temas</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Projeto</h3>
+          <ul>
+            <li><a href="https://github.com/alabvix/talecraft-app" target="_blank" rel="noopener">Código no GitHub</a></li>
+            <li><a href="https://github.com/alabvix/talecraft-app/releases" target="_blank" rel="noopener">Releases</a></li>
+            <li><a href="https://github.com/alabvix/talecraft-app/issues" target="_blank" rel="noopener">Relatar um problema</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rodape__base">
+        <span>© 2026 TaleCraft. Feito para quem escreve.</span>
+        <span>Capturas reais do aplicativo, com dados de demonstração.</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-titulo">
+    <div class="lightbox__topo">
+      <span class="lightbox__titulo" id="lightbox-titulo">Tela</span>
+      <div class="lightbox__controles">
+        <button class="lightbox__botao" type="button" data-acao="anterior" aria-label="Tela anterior">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="lightbox__botao" type="button" data-acao="proxima" aria-label="Próxima tela">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <button class="lightbox__botao" type="button" data-acao="fechar" aria-label="Fechar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <img class="lightbox__imagem" alt="">
+    <p class="lightbox__legenda"></p>
+  </dialog>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

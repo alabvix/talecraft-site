@@ -1,0 +1,9 @@
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ferramentas locais
+node_modules
+.vscode
+.idea
