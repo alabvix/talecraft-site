@@ -873,6 +873,19 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .download h2 { color: #f8f3e9; font-size: clamp(1.7rem, 1.3rem + 1.2vw, 2.3rem); margin-bottom: 10px; }
 .download p { color: #c6baa4; max-width: 48ch; font-size: 14.5px; }
+.download .download__promessa {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid rgba(185, 166, 230, .55);
+  color: #e7dcf6;
+  font-size: 13.5px;
+  max-width: 46ch;
+}
+.download__promessa svg { flex: none; margin-top: 2px; color: #b9a6e6; }
+.download__promessa strong { color: #fff; font-weight: 600; }
 .download__acoes { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; flex: none; }
 .download__nota {
   display: inline-flex;
