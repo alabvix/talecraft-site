@@ -55,11 +55,12 @@ node scripts/capturar-telas.mjs
 ```
 
 Ele sobe o Vite, abre o binário de debug do Tauri via CDP, semeia personagens,
-relações, mundos, entradas, facções e dois livros, e grava as imagens em
-`../talecraft-site/assets/telas/` a 2400×1500. As capturas da galeria usam o tema
-**Tundra** (claro); ao final, o script gera também **Meus Livros** nos três temas
-(`meus-livros-blade-byte`, `-old-tower` e `-tundra`). As miniaturas de `mini/` são
-geradas a partir delas (1200px de largura, JPEG q82).
+relações, mundos, entradas, facções, dois livros e os capítulos do livro de
+demonstração, e grava as imagens em `../talecraft-site/assets/telas/` a
+2400×1500 (o recorte de personagens do capítulo tem 1941×792). As capturas da
+galeria usam o tema **Tundra** (claro); ao final, o script gera também **Meus
+Livros** nos três temas (`meus-livros-blade-byte`, `-old-tower` e `-tundra`). As
+miniaturas de `mini/` são geradas a partir delas (1200px de largura, JPEG q82).
 
 Se uma tela mudar no app, rode o script de novo e regere as miniaturas.
 

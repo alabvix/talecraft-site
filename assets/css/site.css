@@ -653,6 +653,11 @@ strong { font-weight: 600; color: var(--ink); }
   border-radius: 999px;
   padding: 2px 8px;
 }
+.analise__marca--pronto {
+  color: var(--green);
+  border-color: color-mix(in srgb, var(--green) 30%, transparent);
+  background: color-mix(in srgb, var(--green) 8%, transparent);
+}
 .analise__card p { font-size: 13.8px; color: var(--muted); margin: 5px 0 0; max-width: 62ch; }
 
 /* 10. Galeria de telas -------------------------------------------------- */
@@ -718,6 +723,13 @@ strong { font-weight: 600; color: var(--ink); }
 
 .tela--larga { grid-column: span 2; }
 .tela--larga .tela__quadro img { aspect-ratio: 16 / 9; }
+.tela--faixa { grid-column: span 2; }
+.tela--faixa .tela__quadro img {
+  aspect-ratio: 1941 / 792;
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg-alt);
+}
 
 /* 11. Temas do aplicativo ---------------------------------------------- */
 
@@ -1029,7 +1041,8 @@ strong { font-weight: 600; color: var(--ink); }
   .topbar__acoes .btn { display: none; }
   .duplo { grid-template-columns: 1fr; }
   .galeria { grid-template-columns: 1fr; }
-  .tela--larga { grid-column: span 1; }
+  .tela--larga,
+  .tela--faixa { grid-column: span 1; }
   .rodape__grade { grid-template-columns: 1fr 1fr; }
   .rodape__sobre { grid-column: span 2; }
   .stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
